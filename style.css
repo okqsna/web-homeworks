@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+    box-sizing: border-box;
+}
+
+.landing{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    background-color: #F3F2EE;
+}
+
+
+.landing-homepage{
+    display: flex;
+    width: 100%;
+    height: 756px;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #F3F2EE;
+}
+
+.landing-homepage-left{
+    display: flex;
+    flex-direction: column;
+    padding: 64px 0 0 64px;
+}
+
+.landing-homepage-left-header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.landing-homepage-left-header-content{
+    width: 440px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.landing-homepage-left-header-content a{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: #33321E80;
+    font-size: 15px;
+    display: block;
+}
+
+.landing-homepage-left-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-homepage-left-content h1{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: semibold;
+    color: #33321E;
+    font-size: 66px;
+    line-height: 93%;
+    margin: 74px 0px 50px 0px;
+}
+
+.landing-homepage-left-content-p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: semibold;
+    color: #33321E;
+    font-size: 18px;
+    letter-spacing: 1%;
+    margin-bottom: 60px;
+    width: 556px;
+}
+
+.landing-homepage-left-content-a{
+    width: 350px;
+    height: 90px;
+    background-color: #45694E;
+    color: #FFFFFF;
+    border-radius: 32.52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: semibold;
+    font-size: 24.17px;
+    text-align: center;
+}
+
+
+.landing-reasons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 676px;
+    background-color: #909E7A;
+    border-radius: 20px;
+    padding-top: 55px;
+    position: relative;
+}
+
+.landing-reasons h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+}
+.landing-reasons-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.landing-reasons-cards-col1-card{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 32px 30px 32px;
+    width: 535px;
+    min-height: 189px;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    margin-left: 32px;
+    border-radius: 20px;
+}
+
+.landing-reasons-cards-col1-card-caption{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.landing-reasons-cards-col1-card-caption-visuals{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #45694E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.landing-reasons-cards-col1-card-caption h4{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: semibold;
+    font-size: 32px;
+    text-align: left;
+    color: #33321E;
+}
+
+.landing-reasons-cards-col1-card-caption-p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    width: 471px;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+}
+.landing-reasons .landing-reasons-flower{
+    position: absolute;
+    right:0;
+    bottom: -35vh;
+    pointer-events: none;
+}
+
+.landing-process{
+   width: 100%;
+   height: 737px;
+   background-color: #F3F2EE;
+   padding: 90px 62px;
+   display: flex;
+   flex-direction: column;
+}
+
+.landing-process h2{
+    color:#33321E;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 600;
+    width: 1099px;
+}
+
+.landing-process-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.landing-process-left{
+    margin-top: 60px;
+}
+
+.landing-process-left h4{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+    color: #45694E;
+    font-style: normal;
+    margin-bottom: 30px;
+}
+
+.landing-process-left-processes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 230px;
+}
+.landing-process-left-processes-li{
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    list-style-type: none;
+    font-size: 18px;
+    color: #33321E;
+    font-weight: 400;
+    width: 500px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.landing-process-left-processes-li-counter{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 32px;
+    color: #FFFFFF;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #45694E;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.landing-product-features{
+    width: 100%;
+    border-radius: 30px;
+    background-color: #EBE3DE;
+    height: 732px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+}
+
+.landing-product-features h2, .landing-app-features h2, .landing-reviews h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    color: #33321E;
+    margin-bottom: 18px;
+}
+
+.landing-product-features-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+
+.landing-product-features-cards-card{
+    width: 326px;
+    height: 226px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 17px 35px;
+}
+
+.landing-product-features-cards-card-caption{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 23px;
+}
+.landing-product-features-cards-card-caption h4{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    color: #45694E;
+    margin-top: 10px;
+}
+.landing-product-features-cards-card-p, .landing-reviews-cards-card-p, .landing-footer-col1-p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    color: #33321E;
+}
+
+.landing-app-features{
+    width: 100%;
+    height: 732px;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+.landing-app-features-content{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.landing-app-features-content-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.landing-app-features-content-right-feature{
+    list-style-type: none;
+    text-align: left;
+    min-height: 96px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.landing-app-features-right-feature-caption h4, .landing-reviews-cards-card-user h5{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    color: #45694E;
+    margin-bottom: 5px;
+}
+
+.landing-app-features-right-feature-caption-p{
+    width: 481px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #33321E;
+}
+
+
+.landing-app-features-right-feature-counter{
+    display: inline-block;
+    background-color: #45694E;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+
+.landing-app-features-content-left-video{
+    width: 560px;
+    border-radius: 20px;
+}
+
+.landing-kit{
+    width: 100%;
+    height: 774px;
+    border-radius: 20px;
+    background-color: #909E7A;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.landing-kit-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.landing-reviews{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F2EE;
+    align-items: center;
+    padding: 60px 55px;
+}
+
+.landing-reviews-cards{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.landing-reviews-cards-card{
+    background-color: #FFFFFF;
+    width: 430px;
+    min-height: 227px;
+    border-radius: 20px;
+    margin-left: 25px;
+    padding: 25px;
+}
+
+.landing-reviews-cards-card-user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.landing-reviews-cards-card-user-picture{
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.landing-footer{
+    width: 100%;
+    background-color: #EBE3DE;
+    border-radius: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 60px;
+}
+.landing-footer-col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+.landing-footer-col1-logo{
+    width: 179px;
+    height: 35px;
+}
+
+.landing-footer-col1-socials-links{
+    margin-top: 10px;
+    width: 113px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.landing-footer-col1-socials-links-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border-radius:100%;
+}
+
+.landing-footer-col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 65px;
+}
+
+.landing-footer-col2-link, .landing-footer-col2-link-gmail, .landing-footer-col2-p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+    color: #33321E;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.landing-footer-col2-link-gmail, .landing-footer-col2-p{
+    text-decoration: none;
+}
+.landing-footer-pot{
+    border-top-right-radius: 20px;
+}
