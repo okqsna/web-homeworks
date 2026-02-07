@@ -35,12 +35,14 @@
     flex-direction: row;
     align-items: center;
 }
+
 .landing-homepage-left-header-content{
     width: 440px;
     height: 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .landing-homepage-left-header-content a{
@@ -52,6 +54,18 @@
     color: #33321E80;
     font-size: 15px;
     display: block;
+    position: relative;
+}
+
+.landing-homepage-left-header-content a:nth-child(1),
+.landing-homepage-left-header-content a:nth-child(2),
+.landing-homepage-left-header-content a:nth-child(3) {
+    border-right: 1px solid #33321E80;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.landing-homepage-left-header-content a:nth-child(4){
+    padding-left: 20px;
 }
 
 .landing-homepage-left-content{
@@ -402,19 +416,99 @@
     border-radius: 20px;
 }
 
-.landing-kit{
+.landing-kit {
     width: 100%;
-    height: 774px;
+    min-height: 774px;
     border-radius: 20px;
     background-color: #909E7A;
+    padding: 60px 80px;
+    position: relative;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
+    align-items: center;
 }
-.landing-kit-cards{
+
+.landing-kit h2 {
+    color: #FFFFFF;
+    font-size: 48px;
+    margin-bottom: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    align-self: flex-start;
+    margin-left: 130px;
+}
+
+.landing-kit-cards {
+    display: grid;
+    grid-template-columns: 490px repeat(2, 270px);
+    grid-template-rows: repeat(2, 255px);
+    gap: 24px;
+    position: relative;
+}
+
+.landing-kit-card-huge {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 50px 40px 40px 40px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.landing-kit-card-huge h3 {
+    margin-top: 20px;
+    align-self: flex-start;
+    color: #45694E;
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.landing-kit-card-small {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.landing-kit-card-small img {
+    width: auto;
+    height: 130px;
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+.landing-kit-card-small h4 {
+    color: #45694E;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+.landing-kit-decoration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 400px;
+    width: auto;
+    border-bottom-left-radius: 20px;
+}
+
 
 .landing-reviews{
     width: 100%;
