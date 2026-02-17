@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    display: flexbox;
     box-sizing: border-box;
 }
 
@@ -339,6 +338,10 @@
     color: #33321E;
 }
 
+.landing-product-features-flower{
+    display: none;
+}
+
 .landing-app-features{
     width: 100%;
     height: 732px;
@@ -611,4 +614,234 @@
 }
 .landing-footer-pot{
     border-top-right-radius: 20px;
+}
+
+@media (max-width: 430px) {
+    .landing-reasons{
+        width: 100%;
+        height: auto;
+        min-height: 1100px;
+        align-items: center;
+    }
+
+    .landing-reasons h2{
+        font-size: 20px;
+        margin-bottom: 28px;
+        width: 360px;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .landing-reasons-cards-col1-card{
+        width:342px;
+        height: 199px;
+        margin-left: 0;
+        padding: 25px;
+    }
+    .landing-reasons-cards-col1-card-caption{
+        margin-bottom: 10px;
+    }
+
+    .landing-reasons-cards-col1-card-caption-visuals{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .landing-reasons-cards-col1-card-caption h4{
+        font-size: 22px;
+        width: 201px;
+    }
+    .landing-reasons-cards-col1-card-caption-p{
+        font-size: 14px;
+        width: 284px;
+    }
+
+    .landing-reasons .landing-reasons-flower{
+        bottom: -12vh;
+    }
+
+    .landing-reasons-flower img{
+        height: 350px;
+    }
+
+    .landing-process{
+        min-height: 737px;
+        height: auto;
+        padding: 50px 0px 20px 0px;
+        align-items: center;
+    }
+    .landing-process h2{
+        font-size: 20px;
+        width: 337px;
+    }
+
+    .landing-process-content{
+        flex-direction: column-reverse;
+    }
+
+    .landing-process-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing-process-right .landing-process-right-video{
+        width: 430px;
+        height: 322px;
+        border-radius: 20px;
+    }
+
+    .landing-process-left{
+        margin-top: 0;
+    }
+
+    .landing-process-left h4{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .landing-process-left-processes{
+        align-items: center;
+        width: 430px;
+    }
+    .landing-process-left-processes-li{
+        width: 376px;
+        font-size: 13px;
+    }
+
+    .landing-product-features{
+        height: auto;
+        min-height: 190vh;
+    }
+
+    .landing-product-features h2, .landing-reviews h2, .landing-app-features h2{
+        font-size: 24px;
+    }
+
+    .landing-product-features-cards{
+        width: 100%;
+        position: absolute;
+        margin: 30px;
+    }
+    .landing-product-features-cards-card{
+        margin-left: 0;
+        width: 332px;
+        height: 173px;
+    }
+    .landing-product-features-cards-card-caption{
+        margin-bottom: 13px;
+    }
+    .landing-product-features-cards-card-p, .landing-reviews-cards-card-p, .landing-footer-col1-p{
+        font-size: 14px;
+    }
+    .landing-product-features-flower{
+        display: flex;
+        position: relative;
+        right: 23vh;
+        top: 116vh;
+    }
+
+    .landing-app-features{
+        min-height: 832px;
+        height: auto;
+        padding: 40px 0px;
+    }
+
+    .landing-app-features-content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .landing-app-features h2{
+        margin-left: 25px;
+        margin-bottom: -20px;
+    }
+
+    .landing-app-features-content{
+        margin-top: 0px;
+    }
+    .landing-app-features-content-right{
+        margin-top: 0px;
+    }
+
+    .landing-app-features-content-right-feature{
+        width: 400px;
+        min-height: 84px;
+        margin-top: 10px;
+    }
+    .landing-app-features-right-feature-caption h4{
+        font-size: 20px;
+    }
+    .landing-app-features-right-feature-caption-p{
+        font-size: 14px;
+        width: 301px;
+    }
+
+    .landing-app-features-content-left .landing-app-features-content-left-video{
+        width: 430px;
+        height: 339px;
+        border-radius: 20px;
+    }
+
+
+    .landing-reviews{
+        min-height: 889px;
+        height: auto;
+    }
+
+    .landing-reviews-cards{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .landing-reviews-cards-card{
+        width: 332px;
+        min-height: 223px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .landing-reviews-cards-card-user{
+        margin-bottom: 10px;
+    }
+
+    .landing-reviews-cards-card-user h5{
+        font-size: 20px;
+    }
+
+    .landing-footer{
+        min-height: 400px;
+        height: auto;
+        flex-direction: column;
+        padding: 30px 30px 0px 30px;
+    }
+    .landing-footer-col1{
+        padding-bottom: 0;
+        position: relative;
+    }
+    .landing-footer-col1-logo{
+        width: 157px;
+        height: 31px;
+    }
+
+    .landing-footer-col1-p{
+        margin-top: 20px;
+    }
+
+    .landing-footer-col2{
+        margin-top: 40px;
+    }
+
+    .landing-footer-col2-link, .landing-footer-col2-link-gmail, .landing-footer-col2-p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .landing-footer-pot{
+        display: none;
+    }
+
+
+    .landing-homepage, .landing-kit{
+        display: none;
+    }
 }
