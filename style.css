@@ -12,39 +12,38 @@
     background-color: #F3F2EE;
 }
 
-
 .landing-homepage{
     display: flex;
     width: 100%;
     height: 756px;
-    justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #F3F2EE;
 }
 
-.landing-homepage-left{
-    display: flex;
-    flex-direction: column;
-    padding: 64px 0 0 64px;
-}
 
-.landing-homepage-left-header{
+.landing-homepage-header{
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    padding-top: 70px;
+    padding-left: 70px;
+    position: absolute;
 }
 
-.landing-homepage-left-header-content{
+.landing-homepage-header-menu{
+    display: none;
+}
+.landing-homepage-header-content{
     width: 440px;
     height: 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-left: 170px;
 }
 
-.landing-homepage-left-header-content a{
+.landing-homepage-header-content a{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -56,23 +55,29 @@
     position: relative;
 }
 
-.landing-homepage-left-header-content a:nth-child(1),
-.landing-homepage-left-header-content a:nth-child(2),
-.landing-homepage-left-header-content a:nth-child(3) {
+.landing-homepage-header-content a:nth-child(1),
+.landing-homepage-header-content a:nth-child(2),
+.landing-homepage-header-content a:nth-child(3) {
     border-right: 1px solid #33321E80;
     padding-right: 20px;
     padding-left: 20px;
 }
-.landing-homepage-left-header-content a:nth-child(4){
+.landing-homepage-header-content a:nth-child(4){
     padding-left: 20px;
 }
 
-.landing-homepage-left-content{
+.landing-homepage-content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 70px;
 }
 
-.landing-homepage-left-content h1{
+.landing-homepage-content-left{
+    padding-top: 100px;
+}
+
+.landing-homepage-content-left h1{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -83,7 +88,7 @@
     margin: 74px 0px 50px 0px;
 }
 
-.landing-homepage-left-content-p{
+.landing-homepage-content-left-p{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -95,7 +100,7 @@
     width: 556px;
 }
 
-.landing-homepage-left-content-a{
+.landing-homepage-content-left-a{
     width: 350px;
     height: 90px;
     background-color: #45694E;
@@ -112,6 +117,12 @@
     font-size: 24.17px;
     text-align: center;
 }
+
+.landing-homepage-content-right{
+    position: relative;
+}
+
+
 
 
 .landing-reasons{
@@ -329,7 +340,7 @@
     color: #45694E;
     margin-top: 10px;
 }
-.landing-product-features-cards-card-p, .landing-reviews-cards-card-p, .landing-footer-col1-p{
+.landing-product-features-cards-card-p, .landing-reviews-cards-card-p, .landing-footer-col1-p, .landing-footer-col1-p-span{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -612,11 +623,91 @@
 .landing-footer-col2-link-gmail, .landing-footer-col2-p{
     text-decoration: none;
 }
+
+.landing-footer-pot-smaller{
+    display: none;
+}
 .landing-footer-pot{
     border-top-right-radius: 20px;
 }
 
 @media (max-width: 430px) {
+    .landing-homepage{
+        height: auto;
+        min-height: 90vh;
+    }
+
+    .landing-homepage-header{
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        position: static;
+        z-index: 4;
+    }
+
+    .landing-homepage-content{
+        flex-direction: column-reverse;
+    }
+
+    .landing-homepage-header-content{
+        display: none;
+    }
+    .landing-homepage-header-logo{
+        width: 68px;
+        height: 13px;
+    }
+
+    .landing-homepage-header-menu{
+        display: block;
+    }
+
+    .landing-homepage-content{
+        padding-left: 40px;
+    }
+
+    .landing-homepage-content-left{
+        z-index: 4;
+        margin-top: 80px;
+    }
+   
+    .landing-homepage-content-left h1{
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .landing-homepage-content-left-p{
+        font-size: 14px;
+        max-width: 348px;
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .landing-homepage-content-left-a{
+        width: 100%;
+        max-width: 369px;
+        font-size: 20.97px;
+        height: 71px;
+    }
+
+   .landing-homepage-content-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 0px;
+        left: 40px;
+        z-index: 1;
+
+    }
+
+    .landing-homepage-content-right img{
+        max-width: 300px;
+        max-height: 300px;
+        position: relative;
+    }
+    
+
     .landing-reasons{
         width: 100%;
         height: auto;
@@ -687,9 +778,10 @@
     }
 
     .landing-process-right .landing-process-right-video{
-        width: 430px;
         height: 322px;
         border-radius: 20px;
+        width: 100%;
+        max-width: 430px;
     }
 
     .landing-process-left{
@@ -733,6 +825,10 @@
     }
     .landing-product-features-cards-card-p, .landing-reviews-cards-card-p, .landing-footer-col1-p{
         font-size: 14px;
+    }
+    .landing-footer-col1-p{
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     .landing-product-features-flower{
         display: flex;
@@ -813,9 +909,10 @@
         min-height: 400px;
         height: auto;
         flex-direction: column;
-        padding: 30px 30px 0px 30px;
+        padding: 0px 30px 0px 30px;
     }
     .landing-footer-col1{
+        padding-top: 30px;
         padding-bottom: 0;
         position: relative;
     }
@@ -824,8 +921,9 @@
         height: 31px;
     }
 
-    .landing-footer-col1-p{
+    .landing-footer-col1-p-span{
         margin-top: 20px;
+        font-size: 14px;
     }
 
     .landing-footer-col2{
@@ -839,9 +937,15 @@
     .landing-footer-pot{
         display: none;
     }
+    .landing-footer-pot-smaller{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
 
 
-    .landing-homepage, .landing-kit{
+
+    .landing-kit{
         display: none;
     }
 }
