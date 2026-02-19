@@ -15,7 +15,8 @@
 .landing-homepage{
     display: flex;
     width: 100%;
-    height: 756px;
+    min-height: 756px;
+    height: auto;
     flex-direction: column;
     background-color: #F3F2EE;
 }
@@ -122,6 +123,12 @@
     position: relative;
 }
 
+.landing-homepage-right-img{
+    max-width: 625px;
+    max-height: 625px;
+    height: auto;
+    width: auto;
+}
 
 
 
@@ -130,7 +137,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 676px;
+    min-height: 676px;
+    height: auto;
     background-color: #909E7A;
     border-radius: 20px;
     padding-top: 55px;
@@ -145,6 +153,7 @@
     font-size: 48px;
     color: #FFFFFF;
     margin-bottom: 48px;
+    padding-left: 70px;
 }
 .landing-reasons-cards{
     display: flex;
@@ -210,7 +219,8 @@
 
 .landing-process{
    width: 100%;
-   height: 737px;
+   min-height: 737px;
+   height: auto;
    background-color: #F3F2EE;
    padding: 90px 62px;
    display: flex;
@@ -286,15 +296,33 @@
     margin-left: 15px;
 }
 
+.landing-process-right{
+    max-width: 757px;
+    max-height: 416px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10px;
+}
+
+.landing-process-right .landing-process-right-video{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 .landing-product-features{
     width: 100%;
     border-radius: 30px;
     background-color: #EBE3DE;
-    height: 732px;
+    min-height: 732px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 56px;
+    padding-bottom: 30px;
 }
 
 .landing-product-features h2, .landing-app-features h2, .landing-reviews h2{
@@ -355,7 +383,8 @@
 
 .landing-app-features{
     width: 100%;
-    height: 732px;
+    height: auto;
+    min-height: 732px;
     padding: 80px 60px;
     display: flex;
     flex-direction: column;
@@ -432,6 +461,7 @@
 
 .landing-kit {
     width: 100%;
+    height: auto;
     min-height: 774px;
     border-radius: 20px;
     background-color: #909E7A;
@@ -526,7 +556,8 @@
 
 .landing-reviews{
     width: 100%;
-    height: 600px;
+    min-height: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: #F3F2EE;
@@ -535,9 +566,10 @@
 }
 
 .landing-reviews-cards{
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .landing-reviews-cards-card{
@@ -547,6 +579,7 @@
     border-radius: 20px;
     margin-left: 25px;
     padding: 25px;
+    margin-top: 20px;
 }
 
 .landing-reviews-cards-card-user{
@@ -567,6 +600,7 @@
     background-color: #EBE3DE;
     border-radius: 20px;
     height: 300px;
+    min-height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -634,7 +668,9 @@
 @media (max-width: 430px) {
     .landing-homepage{
         height: auto;
-        min-height: 90vh;
+        min-height: 656px;
+        width: 100%;
+        padding-bottom: 30px;
     }
 
     .landing-homepage-header{
@@ -647,6 +683,7 @@
     }
 
     .landing-homepage-content{
+        width: 100%;
         flex-direction: column-reverse;
     }
 
@@ -693,18 +730,16 @@
    .landing-homepage-content-right{
         width: 100%;
         display: flex;
-        justify-content: flex-end;
-        position: absolute;
-        top: 0px;
-        right: 30px;
-        z-index: 1;
+        justify-content: center;
+        position: relative;
+        margin-top: 20px;
     }
 
     .landing-homepage-content-right img{
-        max-width: 300px;
         width: 100%;
-        max-height: 300px;
-        position: relative;
+        max-width: 300px;
+        height: auto;
+        display: block;
     }
     
 
@@ -721,6 +756,7 @@
         width: 360px;
         text-align: left;
         margin-left: 30px;
+        padding-left: 0;
     }
 
     .landing-reasons-cards-col1-card{
@@ -803,7 +839,7 @@
 
     .landing-product-features{
         height: auto;
-        min-height: 190vh;
+        min-height: 85em;
     }
 
     .landing-product-features h2, .landing-reviews h2, .landing-app-features h2{
@@ -833,8 +869,8 @@
     .landing-product-features-flower{
         display: flex;
         position: relative;
-        right: 23vh;
-        top: 116vh;
+        top: 60em;
+        left: -11em;
     }
 
     .landing-app-features{
@@ -901,6 +937,7 @@
         width: 332px;
         min-height: 223px;
         height: auto;
+        margin-left: 0px;
         margin-top: 30px;
     }
 
