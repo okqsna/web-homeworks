@@ -19,15 +19,18 @@
     height: auto;
     flex-direction: column;
     background-color: #F3F2EE;
+    padding-left: 70px;
 }
 
 
 .landing-homepage-header{
+    padding-top: 70px;
+    max-width: 850px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 70px;
-    padding-left: 70px;
+    justify-content: flex-start;
+    max-height: 31px;
     position: absolute;
 }
 
@@ -35,13 +38,14 @@
     display: none;
 }
 .landing-homepage-header-content{
-    width: 440px;
+    max-width: 440px;
+    width: auto;
     height: 18px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 170px;
+    margin-left: 70px;
 }
 
 .landing-homepage-header-content a{
@@ -53,7 +57,6 @@
     color: #33321E80;
     font-size: 15px;
     display: block;
-    position: relative;
 }
 
 .landing-homepage-header-content a:nth-child(1),
@@ -71,11 +74,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 70px;
 }
 
 .landing-homepage-content-left{
-    padding-top: 100px;
+    padding-top: 90px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .landing-homepage-content-left h1{
@@ -119,18 +123,13 @@
     text-align: center;
 }
 
-.landing-homepage-content-right{
-    position: relative;
-}
 
 .landing-homepage-right-img{
+    width: 100%;
     max-width: 625px;
-    max-height: 625px;
     height: auto;
-    width: auto;
+    display: block;
 }
-
-
 
 .landing-reasons{
     display: flex;
@@ -234,7 +233,7 @@
     font-style: normal;
     font-size: 48px;
     font-weight: 600;
-    width: 1099px;
+    max-width: 1099px;
 }
 
 .landing-process-content{
@@ -250,7 +249,7 @@
 .landing-process-left h4{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-size: 32px;
+    font-size: 30px;
     color: #45694E;
     font-style: normal;
     margin-bottom: 30px;
@@ -301,7 +300,8 @@
     max-height: 416px;
     display: flex;
     justify-content: flex-end;
-    margin-left: 10px;
+    align-items: flex-end;
+    margin-left: 30px;
 }
 
 .landing-process-right .landing-process-right-video{
@@ -418,7 +418,6 @@
 
 .landing-app-features-right-feature-caption h4, .landing-reviews-cards-card-user h5{
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-size: 24px;
@@ -454,9 +453,20 @@
 }
 
 
+.landing-app-features-content-left{
+    max-width: 587px;
+    max-height: 427px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 10px;
+}
 .landing-app-features-content-left-video{
-    width: 560px;
-    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
 }
 
 .landing-kit {
@@ -472,7 +482,14 @@
     align-items: center;
 }
 
-.landing-kit h2 {
+.landing-kit-caption{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 7%;
+}
+
+.landing-kit-caption h2 {
     color: #FFFFFF;
     font-size: 48px;
     margin-bottom: 50px;
@@ -480,8 +497,6 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 600;
-    align-self: flex-start;
-    margin-left: 130px;
 }
 
 .landing-kit-cards {
@@ -515,7 +530,7 @@
     font-weight: 600;
 }
 
-.landing-kit-card-small {
+.landing-kit-card-small{
     background-color: #FFFFFF;
     border-radius: 20px;
     display: flex;
@@ -532,7 +547,7 @@
     margin-bottom: 20px;
 }
 
-.landing-kit-card-small h4 {
+.landing-kit-card-small h4{
     color: #45694E;
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
@@ -548,8 +563,10 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 400px;
+    max-height: 400px;
+    height: auto;
     width: auto;
+    max-width: 250px;
     border-bottom-left-radius: 20px;
 }
 
@@ -640,6 +657,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-top: 40px;
     padding-bottom: 65px;
 }
 
@@ -668,12 +686,12 @@
 @media (max-width: 430px) {
     .landing-homepage{
         height: auto;
-        min-height: 656px;
-        width: 100%;
-        padding-bottom: 30px;
+        min-height: 650px;
+        padding-left: 0;
     }
 
     .landing-homepage-header{
+        max-width: 430px;
         justify-content: space-between;
         padding-top: 40px;
         padding-left: 40px;
@@ -683,7 +701,6 @@
     }
 
     .landing-homepage-content{
-        width: 100%;
         flex-direction: column-reverse;
     }
 
@@ -700,7 +717,7 @@
     }
 
     .landing-homepage-content{
-       padding-left: 40px;
+        padding-left: 40px;
     }
 
     .landing-homepage-content-left{
@@ -728,20 +745,19 @@
     }
 
    .landing-homepage-content-right{
-        width: 100%;
         display: flex;
         justify-content: center;
-        position: relative;
-        margin-top: 20px;
+        position: absolute;
+        top: 0px;
+        right: 40px;
+        z-index: 1;
     }
 
     .landing-homepage-content-right img{
-        width: 100%;
         max-width: 300px;
-        height: auto;
-        display: block;
+        max-height: 300px;
+        position: relative;
     }
-    
 
     .landing-reasons{
         width: 100%;
@@ -811,13 +827,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 0px;
+        max-width: 430px;
     }
 
     .landing-process-right .landing-process-right-video{
         height: 322px;
         border-radius: 20px;
-        width: 100%;
-        max-width: 430px;
+        width: auto;
     }
 
     .landing-process-left{
@@ -883,6 +900,9 @@
         flex-direction: column-reverse;
         align-items: center;
     }
+    .landing-app-features-content-left{
+        margin-left: 0px;
+    }
 
     .landing-app-features h2{
         margin-left: 25px;
@@ -918,9 +938,70 @@
     .landing-kit{
         min-height: 885px;
         height: auto;
-        display: none;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 30px;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
+        gap: 20px;
     }
 
+    .landing-kit-caption{
+        padding-left: 0;
+        justify-content: center;
+    }
+    .landing-kit-caption h2{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .landing-kit-cards{
+        position: static;
+        grid-template-columns:  repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 17px;
+    }
+
+    .landing-kit-card-huge{
+        grid-column: 1 / -1;
+        grid-row: auto;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        padding: 30px 27px;
+        width: 100%; 
+        height: auto;
+    }
+    .landing-kit-card-huge h3{
+        font-size: 24px;
+    }
+
+    .landing-kit-card-huge img{
+        max-width: 218px;
+        width: 100%;
+        min-height: 252px;
+    }
+
+    .landing-kit-card-small{
+        max-width: 178px;
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .landing-kit-card-small h4{
+        font-size: 17px;
+    }
+
+    .landing-kit-card-small img{
+        width: auto;
+        height: auto;
+        max-width: 130px;
+        margin-bottom: 10px;
+    }
+
+
+    .landing-kit-decoration{
+        display: none;
+    }
 
 
     .landing-reviews{
@@ -985,5 +1066,6 @@
         display: block;
         position: absolute;
         right: 0;
+        border-radius: 20px;
     }
 }
