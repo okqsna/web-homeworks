@@ -717,7 +717,8 @@
     }
 
     .landing-homepage-content{
-        padding-left: 40px;
+        align-items: center;
+        justify-content: center;
     }
 
     .landing-homepage-content-left{
@@ -829,6 +830,7 @@
         align-items: center;
         margin-left: 0px;
         max-width: 430px;
+        width: 100%;
     }
 
     .landing-process-right .landing-process-right-video{
@@ -847,7 +849,8 @@
     }
     .landing-process-left-processes{
         align-items: center;
-        width: 430px;
+        max-width: 430px;
+        width: 100%;
     }
     .landing-process-left-processes-li{
         width: 376px;
@@ -930,7 +933,8 @@
     }
 
     .landing-app-features-content-left .landing-app-features-content-left-video{
-        width: 430px;
+        max-width: 430px;
+        width: 100%;
         height: 339px;
         border-radius: 20px;
     }
